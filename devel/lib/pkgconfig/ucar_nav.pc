@@ -1,0 +1,8 @@
+prefix=/home/ucar/Desktop/ucar/devel
+
+Name: ucar_nav
+Description: Description of ucar_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ucar/Desktop/ucar/devel/lib 
+Requires: 

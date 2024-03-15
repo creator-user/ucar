@@ -1,0 +1,22 @@
+{
+    "cmake.configureOnOpen": true,
+    "python.autoComplete.extraPaths": [
+        "/home/ucar/Desktop/ucar/devel/lib/python3/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages",
+        "/home/ucar/Desktop/ucar/devel/lib/python3/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages",
+        "$PYTHONPATH",
+        "/home/inano/.local/lib/python3.6/site-packages",
+        "/home/inano/.local/lib/python3.6/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ucar/Desktop/ucar/devel/lib/python3/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages",
+        "/home/ucar/Desktop/ucar/devel/lib/python3/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages",
+        "$PYTHONPATH",
+        "/home/inano/.local/lib/python3.6/site-packages",
+        "/home/inano/.local/lib/python3.6/site-packages"
+    ],
+    "cmake.sourceDirectory": "/home/ucar/Desktop/ucar/src/YDLidar-SDK/core/math"
+}

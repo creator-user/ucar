@@ -1,0 +1,8 @@
+prefix=/home/ucar/Desktop/ucar/devel
+
+Name: xf_mic_asr_offline
+Description: Description of xf_mic_asr_offline
+Version: 0.0.0
+Cflags: -I/home/ucar/Desktop/ucar/devel/include
+Libs: -L/home/ucar/Desktop/ucar/devel/lib -llibmsc.so
+Requires: message_runtime

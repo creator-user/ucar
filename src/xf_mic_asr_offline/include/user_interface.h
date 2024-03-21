@@ -26,7 +26,7 @@ char *ASR_RES_PATH = (char*)"/config/msc/res/asr/common.jet"; //离线语法识�
 char *GRM_BUILD_PATH = (char*)"/config/msc/res/asr/GrmBuilld";   //构建离线语法识别网络生成数据保存路径
 char *GRM_FILE = (char*)"/config/call.bnf";					//构建离线识别语法网络所用的语法文件，用户自修改文件
 char *LEX_NAME = (char*)"contact";
-char *APPID = (char*)" ";
+char *APPID = (char*)"0e82c625";
 //运行效果调试参数
 int confidence = 0;
 int time_per_order = 3;//一次命令时长默认时长,如用户在接口中不进行设置,则默认为该值

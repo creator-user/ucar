@@ -165,27 +165,57 @@ catkin_package(
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
+
+
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(xf_asr_offline_node src/hid_test_auto.cpp)
+add_executable(voice_control src/voice_control.cpp)
 add_dependencies(
-  xf_asr_offline_node
+  voice_control
   ${xf_mic_package_EXPORTED_TARGETS}
   xf_mic_asr_offline_gencpp
 )
-target_link_libraries(xf_asr_offline_node ${catkin_LIBRARIES} msc offline_record_lib hid_lib rt dl pthread stdc++  )
+target_link_libraries(voice_control ${catkin_LIBRARIES} offline_record_lib hid_lib rt dl pthread stdc++ )
 
 
-add_executable(client_node src/client.cpp)
+add_executable(call_recognition src/call_recognition.cpp)
 add_dependencies(
-  client_node
+  call_recognition
   ${xf_mic_package_EXPORTED_TARGETS}
   xf_mic_asr_offline_gencpp
 )
-target_link_libraries(client_node ${catkin_LIBRARIES} offline_record_lib hid_lib rt dl  pthread stdc++ )
+target_link_libraries(
+    call_recognition 
+    ${catkin_LIBRARIES} 
+#    offline_record_lib hid_lib rt dl pthread stdc++ 
+)
+
+# include_directories(
+#   include
+#   ${catkin_INCLUDE_DIRS}
+# )
+
+# add_executable(xf_asr_offline_node src/hid_test_auto.cpp)
+# add_dependencies(
+#   xf_asr_offline_node
+#   ${xf_mic_package_EXPORTED_TARGETS}
+#   xf_mic_asr_offline_gencpp
+# )
+# target_link_libraries(xf_asr_offline_node ${catkin_LIBRARIES} msc offline_record_lib hid_lib rt dl pthread stdc++  )
+
+
+# add_executable(client_node src/client.cpp)
+# add_dependencies(
+#   client_node
+#   ${xf_mic_package_EXPORTED_TARGETS}
+#   xf_mic_asr_offline_gencpp
+# )
+# target_link_libraries(client_node ${catkin_LIBRARIES} offline_record_lib hid_lib rt dl  pthread stdc++ )
+
+
 #############
 ## Install ##
 #############

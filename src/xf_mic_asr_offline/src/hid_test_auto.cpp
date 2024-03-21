@@ -851,6 +851,8 @@ int main(int argc, char *argv[])
 	if (major_mic_id>5 || major_mic_id<0)
 	{
 		printf(">>>>>未设置主麦，请唤醒或设置主麦\n");
+		system("rosservice call /xf_asr_offline_node/set_major_mic_srv 3");
+		system("rosservice call /xf_asr_offline_node/set_awake_word_srv “小飞小飞”");
 	}
 	while (major_mic_id>5 || major_mic_id<0)
 	{
